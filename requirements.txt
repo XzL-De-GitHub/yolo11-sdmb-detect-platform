@@ -1,9 +1,7 @@
-# 强制优先安装无界面版OpenCV
-opencv-python-headless>=4.8.0
-# 其他核心依赖
-ultralytics>=8.2.0
-streamlit>=1.28.0
-numpy>=1.23.0,<2.0.0
-timm>=0.9.0
-torch>=2.0.0
-torchvision>=0.15.0
+opencv-python-headless
+ultralytics
+streamlit
+numpy
+timm
+torch
+torchvision
