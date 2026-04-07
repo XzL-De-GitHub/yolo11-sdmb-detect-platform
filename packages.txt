@@ -1,2 +1,4 @@
-libgl1-mesa-glx
+# 适配Debian Trixie的新包名，替代旧的libgl1-mesa-glx
+libgl1
+libglx-mesa0
 libglib2.0-0
