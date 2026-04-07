@@ -1,6 +1,5 @@
 # 导入依赖库
 import streamlit as st
-import cv2
 import numpy as np
 from PIL import Image
 from ultralytics import YOLO
@@ -112,6 +111,7 @@ def plot_detection(result):
 
 # -------------------------- 1. 单张图片检测 --------------------------
 def image_detection():
+    import cv2
     st.subheader("📸 单张图片目标检测")
     uploaded_img = st.file_uploader("上传单张图片", type=["jpg", "jpeg", "png"])
     
@@ -151,6 +151,7 @@ def image_detection():
 
 # -------------------------- 2. 批量图片检测（毕业设计核心功能） --------------------------
 def batch_image_detection():
+    import cv2
     st.subheader("🖼️ 批量图片检测（多图上传+打包下载）")
     uploaded_files = st.file_uploader(
         "上传多张图片（Ctrl/Shift多选）",
@@ -206,6 +207,7 @@ def batch_image_detection():
 
 # -------------------------- 3. 视频检测 --------------------------
 def video_detection():
+    import cv2
     st.subheader("🎥 视频目标检测")
     uploaded_video = st.file_uploader("上传视频", type=["mp4", "avi", "mov"])
     
@@ -252,6 +254,7 @@ def video_detection():
 
 # -------------------------- 4. 实时摄像头检测 --------------------------
 def camera_detection():
+    import cv2
     st.subheader("📹 实时摄像头检测")
     camera = st.camera_input("点击开启摄像头")
     if camera:
